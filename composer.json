@@ -1,5 +1,5 @@
 {
-    "name": "knewageerp/messenger-monitor-bundle",
+    "name": "newageerp/messenger-monitor-bundle",
     "description": "Symfony bundle for information about your Messenger queues and transports",
     "type": "symfony-bundle",
     "require": {
