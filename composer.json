@@ -1,9 +1,8 @@
 {
-    "name": "karo-io/messenger-monitor-bundle",
+    "name": "knewageerp/messenger-monitor-bundle",
     "description": "Symfony bundle for information about your Messenger queues and transports",
     "type": "symfony-bundle",
     "require": {
-        "php": "^7.1.3",
         "symfony/config": "^4.4|^5.0",
         "symfony/dependency-injection": "^4.4|^5.0",
         "symfony/event-dispatcher": "^4.4|^5.0",
