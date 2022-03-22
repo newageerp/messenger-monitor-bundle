@@ -6,19 +6,19 @@
 
     <services>
         <!-- Controllers -->
-        <service id="karo-io.controller.dashboard" class="KaroIO\MessengerMonitorBundle\Controller\DashboardController">
+        <service id="karo-io.controller.dashboard" class="KaroIO\MessengerMonitorBundle\Controller\DashboardController" public="true">
             <argument type="service" id="twig" />
             <argument type="service" id="karo-io.messenger_monitor.receiver_locator" />
             <argument type="service" id="karo-io.messenger_monitor.failed_message.repository" />
         </service>
 
-        <service id="karo-io.controller.retry_failed_message" class="KaroIO\MessengerMonitorBundle\Controller\RetryFailedMessageController">
+        <service id="karo-io.controller.retry_failed_message" class="KaroIO\MessengerMonitorBundle\Controller\RetryFailedMessageController" public="true">
             <argument type="service" id="karo-io.messenger_monitor.failed_message.retry" />
             <argument type="service" id="session" />
             <argument type="service" id="router" />
         </service>
 
-        <service id="karo-io.controller.reject_failed_message" class="KaroIO\MessengerMonitorBundle\Controller\RejectFailedMessageController">
+        <service id="karo-io.controller.reject_failed_message" class="KaroIO\MessengerMonitorBundle\Controller\RejectFailedMessageController" public="true">
             <argument type="service" id="karo-io.messenger_monitor.failed_message.reject" />
             <argument type="service" id="session" />
             <argument type="service" id="router" />
